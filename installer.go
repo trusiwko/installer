@@ -37,7 +37,7 @@ func read(reader io.ReadCloser) {
         if err != nil && err != io.EOF {
             log.Fatal(err)
         }
-		fmt.Println(">>>", buf, nBytes, nChunks)
+		fmt.Print(">>>", string(buf[:]))
     }
 	fmt.Println("end")
 }
